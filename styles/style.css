@@ -1,0 +1,130 @@
+/* override default styles to a predictable value using the “universal” CSS selector (*): */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* padding and border is included in the width and height properties of boxes */
+}
+
+body {
+  background-color: #fbfbfb; /* almost white */
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #2d2d2d; /* almost black */
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.125em;
+  margin: 10px 0px 0px 0px;  /* Top  Right  Bottom  Left */
+}
+
+p {
+  padding: 10px 0px; /* Vertical  Horizontal */
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: #5c5c5c; /* dark grey */
+}
+
+img {
+  max-width: 100%; /* this will make sure the image is never wider than the container it is in */
+  height: auto; /* this keeps the image in its original aspect ratio */
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.main-content {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex; /* flexbox layout mode */
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px 0px; /* Vertical  Horizontal */
+  margin-bottom: 50px;
+}
+
+.projects-section {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 100%;
+  padding: 10px 0px 20px 0px; /* Top  Right  Bottom  Left */
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 30px;
+}
+
+.about {
+  width: 100%;
+}
+
+.about > p:first-of-type {
+  margin-top: 20px;
+}
+
+.about > p:last-of-type {
+  margin-bottom: 10px;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 450px) and (max-width: 960px) {
+  .main-content {
+    width: 85%;
+  }
+  .projects-container {
+    width: 90%;
+  }
+  .about {
+    width: 60%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .main-content {
+    width: 72%;
+  }
+  .projects-container {
+    width: 90%;
+  }
+  .project {
+    width: 45%;
+  }
+  .about {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .page {
+    width: 1440px;
+  }
+}
