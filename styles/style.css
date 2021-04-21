@@ -82,15 +82,27 @@ header {
   margin-bottom: 30px;
 }
 
-.about {
+.about-section {
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portrait, .about-text {
   width: 100%;
 }
 
-.about > p:first-of-type {
+.about-text > p:first-of-type {
   margin-top: 20px;
 }
 
-.about > p:last-of-type {
+.about-text > p:last-of-type {
   margin-bottom: 10px;
 }
 
@@ -102,7 +114,8 @@ header {
   .projects-container {
     width: 90%;
   }
-  .about {
+  .about-container {
+    justify-content: center;
     width: 60%;
   }
 }
@@ -118,8 +131,16 @@ header {
   .project {
     width: 45%;
   }
-  .about {
-    width: 40%;
+  .about-container {
+    width: 90%;
+    flex-direction: row-reverse;
+  }
+  .portrait, .about-text {
+    width: 45%
+  }
+  .about-text > p:first-of-type {
+    margin-top: 0px;
+    padding-top: 0px;
   }
 }
 
