@@ -134,6 +134,7 @@ header {
   .about-container {
     width: 90%;
     flex-direction: row-reverse;
+    border: 1px solid red;
   }
   .portrait, .about-text {
     width: 45%
