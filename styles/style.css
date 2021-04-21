@@ -94,7 +94,12 @@ header {
   flex-wrap: wrap;
 }
 
-.portrait, .about-text {
+.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.about-text {
   width: 100%;
 }
 
