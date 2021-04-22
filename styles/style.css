@@ -94,15 +94,6 @@ header {
   flex-wrap: wrap;
 }
 
-.portrait {
-  width: 100%;
-  height: auto;
-}
-
-.about-text {
-  width: 100%;
-}
-
 .about-text > p:first-of-type {
   margin-top: 20px;
 }
